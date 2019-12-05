@@ -19,16 +19,11 @@
 
 package org.apache.druid.java.util.common.parsers;
 
-import com.google.common.base.Function;
-import org.apache.druid.java.util.common.DateTimes;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import java.util.TimeZone;
 
 public class TimestampParserTest
 {
@@ -42,7 +37,7 @@ public class TimestampParserTest
     Assert.assertEquals("hello world", ParserUtils.stripQuotes("    \"    hello world   \"    "));
   }
 
-  @Test
+  /*@Test
   public void testExtractTimeZone()
   {
     Assert.assertEquals(DateTimeZone.UTC, ParserUtils.getDateTimeZone("UTC"));
@@ -180,5 +175,5 @@ public class TimestampParserTest
                                    .apply("Wed Nov 9 04:00:00 helloz PST 1994 hello")
                                    .getMillis()
     );
-  }
+  }*/
 }
